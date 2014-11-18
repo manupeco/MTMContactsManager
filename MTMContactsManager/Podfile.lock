@@ -1,0 +1,14 @@
+PODS:
+  - MTMContactsManager (0.1.0)
+
+DEPENDENCIES:
+  - MTMContactsManager (from `../`)
+
+EXTERNAL SOURCES:
+  MTMContactsManager:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MTMContactsManager: 218e8cda9b8c0d7f4fc5eca33b30a8b01bd42bb1
+
+COCOAPODS: 0.34.4
