@@ -10,7 +10,7 @@
 Pod::Spec.new do |s|
   s.name             = "MTMContactsManager"
   s.version          = "0.1.0"
-  s.summary          = "A short description of MTMContactsManager."
+  s.summary          = "A module to access the ios address book and retrieve an array of contacts."
   s.description      = <<-DESC
                        An optional longer description of MTMContactsManager
 
