@@ -132,7 +132,7 @@
 #ifdef DEBUG
         NSLog(@"Cannot fetch Contacts :( ");        
 #endif
-        return NO;
+        return nil;
         
         
     }
