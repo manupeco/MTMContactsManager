@@ -10,13 +10,8 @@
 Pod::Spec.new do |s|
   s.name             = "MTMContactsManager"
   s.version          = "0.1.0"
-  s.summary          = "A module to access the ios address book and retrieve an array of contacts."
-  s.description      = <<-DESC
-                       An optional longer description of MTMContactsManager
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
+  s.summary          = "A module to access the ios address book and retrieve an array of MTMContact."
+  s.description      = "A module to access the ios address book and retrieve an array of MTMContact managing permissions. It returns null if no access will be granted."
   s.homepage         = "https://github.com/manupeco/MTMContactsManager"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
