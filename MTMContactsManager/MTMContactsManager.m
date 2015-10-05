@@ -43,9 +43,9 @@
         
         
         ABAddressBookRef addressBook = ABAddressBookCreateWithOptions(NULL, error);
-        ABRecordRef source = ABAddressBookCopyDefaultSource(addressBook);
-        CFArrayRef allPeople = ABAddressBookCopyArrayOfAllPeopleInSourceWithSortOrdering(addressBook, source, kABPersonSortByFirstName);
-        CFIndex nPeople = ABAddressBookGetPersonCount(addressBook);
+        // Use nil as second parameter to retrieve all people. See http://stackoverflow.com/questions/24618171/abaddressbook-crash-cfstringref
+        CFArrayRef allPeople = ABAddressBookCopyArrayOfAllPeopleInSourceWithSortOrdering(addressBook, nil, kABPersonSortByFirstName);
+        CFIndex nPeople = CFArrayGetCount(allPeople);
         NSMutableArray* items = [NSMutableArray arrayWithCapacity:nPeople];
         
         
